@@ -1,0 +1,31 @@
+<template>
+    <lightning-card>
+        testing:  {recordId}
+        <div class="slds-p-left--medium slds-p-right_medium slds-p-top--medium">
+        <lightning-layout>
+            <lightning-layout-item class="THIS">
+                <template if:true={ratingHot}>
+                    <div class="slds-box slds-box_x-small">
+                    <lightning-icon icon-name="utility:favorite" alternative-text="Hot" title="Hot" class="slds-align_absolute-center icon-star gold"></lightning-icon>
+                </div>
+                </template>
+                
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <template if:true={ratingWarm}>
+                    <div class="slds-box slds-box_x-small">
+                    <lightning-icon icon-name="utility:favorite" alternative-text="Warm" title="Warm" class="slds-align_absolute-center icon-star platinum"></lightning-icon>
+                </div>
+                </template>
+                
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <template if:true={ratingCold}>
+                    <lightning-icon icon-name="utility:favorite" alternative-text="Cold" title="Cold"></lightning-icon>
+                </template>
+                
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+    </lightning-card>
+</template>

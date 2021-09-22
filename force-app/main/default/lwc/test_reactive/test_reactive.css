@@ -1,0 +1,36 @@
+.icon-star{
+    top: -5px;
+    position: relative;
+    stroke: #727272;
+    stroke-width: 1px;
+}
+.icon-star.gold{
+    top: -5px;
+    position: relative;
+    stroke: #727272;
+    stroke-width: 1px;
+    --sds-c-icon-color-foreground-default : gold;
+}
+.icon-star.platinum{
+    top: -5px;
+    position: relative;
+    stroke: #727272;
+    stroke-width: 1px;
+    --sds-c-icon-color-foreground-default : rgb(167, 167, 167);
+}
+.icon-star.gold:after {
+    font-size: 0.5rem;
+    letter-spacing: 0;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10px;
+    content: 'Star';
+}   
+.icon-star.platinum:after {
+    font-size: 0.5rem;
+    letter-spacing: 0;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10px;
+    content: 'Star';
+}

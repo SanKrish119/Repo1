@@ -1,0 +1,17 @@
+.THIS.slds-spinner_container {  
+     background-color: transparent;
+  z-index: 5000;
+  position: fixed;   
+}
+.THIS .redcolor svg{
+    fill : red;
+}
+.THIS .redcolor, .THIS .redcolor a{
+    color: red ;
+}
+.THIS .redcolor svg{
+    fill: red !important;
+}
+.THIS .IconName {
+   background-color: green;    
+}

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="EventWithData" icon-name="custom:custom9">
+        <lightning-layout>
+
+            <lightning-layout-item padding="around-small">
+                <template for:each={list} for:item="item">
+                    <c-hello-World key={item.Id} item={item} onselected={handle}></c-hello-World>
+                </template>
+            </lightning-layout-item>
+
+            <lightning-layout-item padding="around-small">
+                <template if:true={selected}>
+                    <p>{selected.Name}</p>
+                    <p>{selected.Title}</p>
+                </template>
+            </lightning-layout-item>
+            
+    </lightning-layout>
+    </lightning-card>
+</template>
