@@ -1,4 +1,4 @@
-/*Juul*/
+
 public class AttachmentController {
 @AuraEnabled
     public static void updatePicturePath(String recId){
